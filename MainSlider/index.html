@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성신여자대학교</title>
+    <!-- 제이쿼리 연결 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- 각 브라우저의 기본 스타일을 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- Google material Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 파비콘 설정-->
+    <link rel="icon" href="/favicon.ico">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- main.css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- main.js -->
+    <script defer src="./js/main.js"></script>
+    <!-- Swiper JS -->
+    <script script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header--contents">   
+            <!-- 로그인, 언어, 포탈, LMS, 검색 -->
+            <div class="access">
+                <ul>
+                    <li class="login">
+                        <img src="./img/btn_login.png">
+                    </li>
+                    <li class="language">
+                        <img src="./img/language.png">
+                    </li>
+                    <li class="portal">
+                        포탈
+                    </li>
+                    <li class="LMS">
+                        LMS
+                    </li>
+                    <li class="search">
+                        <img src="./img/btn_search.png">
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="main">
+                <!-- 로고 이미지 (클릭하면 홈으로 이동) -->
+                <a href="http://127.0.0.1:5500/index.html" class="logo">
+                    <img src="./img/logo.png" alt="로고">
+                </a>
+                <!-- 헤더 메뉴 -->
+                <div class="header--menu">
+                    <div class="menu">
+                        <ul class="main">
+                            <li class="item">
+                                <div class="item__name_one">
+                                    성신소개
+                                    <!-- 드롭 다운 메뉴 -->
+                                    <ul class="item__contents"></ul> 
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item__name_two">
+                                    입학안내
+                                    <!-- 드롭 다운 메뉴 -->
+                                    <ul class="item__contents"></ul>    
+                                </div>      
+                            </li>
+                            <li class="item">
+                                <div class="item__name_three">
+                                    대학·대학원
+                                    <!-- 드롭 다운 메뉴 -->
+                                    <ul class="item__contents"></ul> 
+                                </div>
+                            </li>
+                            <li class="item">                               
+                                <div class="item__name_four">
+                                    학사지원
+                                    <!-- 드롭 다운 메뉴 -->
+                                    <ul class="item__contents"></ul> 
+                                </div>                                
+                            </li>
+                            <li class="item">
+                                <div class="item__name_five">
+                                    연구·신학
+                                    <!-- 드롭 다운 메뉴 -->
+                                    <ul class="item__contents"></ul> 
+                                </div>
+                            </li>
+                            <li class="item">                                
+                                <div class="item__name_six">
+                                    국제화
+                                    <!-- 드롭 다운 메뉴 -->
+                                    <ul class="item__contents"></ul> 
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item__name_seven">
+                                    대학 생활
+                                    <!-- 드롭 다운 메뉴 -->
+                                    <ul class="item__contents"></ul> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>        
+            </div>
+        </div>     
+    </header>
+    <!-- 메인 슬라이드 -->   
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="./img/사진1.jpg" alt="image1">
+              <!-- 슬라이드 문구 -->
+              <div class="slide-text"></div>
+          </div>
+          <div class="swiper-slide">
+              <img src="./img/사진2.jpg" alt="image2">
+              <!-- 슬라이드 문구 -->
+              <div class="slide-text"></div>
+          </div>
+          <div class="swiper-slide">
+              <img src="./img/사진3.jpg" alt="image3">
+              <!-- 슬라이드 문구 -->
+              <div class="slide-text"></div>
+          </div>
+          <div class="swiper-slide">
+              <img src="./img/사진4.jpg" alt="image4">
+              <!-- 슬라이드 문구 -->
+              <div class="slide-text"></div>
+          </div>
+          <div class="swiper-slide">
+              <img src="./img/사진5.jpg" alt="image5">
+              <!-- 슬라이드 문구 -->
+              <div class="slide-text"></div>
+          </div>
+        </div>
+        <!-- 메인 슬라이더 화살표 -->
+        <div class="Arrow-next">
+            <img class="next" src="./img/visual_next.png" alt="arrow-next">
+        </div>
+        <div class="Arrow-prev">
+            <img class="prev" src="./img/visual_prev.png" alt="arrow-prev">
+        </div>
+        <!-- 메인 슬라이더 pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 메인 슬라이더 정지 시작 버튼 -->
+    <div class="slide_btn">
+        <div id="play" class="play">
+            <img src="./img/slide-stop.png" alt="">
+        </div>
+        <div id="pause" class="pause">
+            <img src="./img/slide-play.png" alt="">
+        </div>
+    </div>
+    <div class="subSlider"></div>
+    <!-- SCROLL TO TOP -->
+    <a href="#" class="scroll-to-top">
+        <img src="./img/scrolltotop.jpg" alt="scroll-to-top">
+    </a>
+</body>
